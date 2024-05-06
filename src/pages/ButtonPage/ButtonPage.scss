@@ -1,0 +1,110 @@
+@import '../../abstracts/variables.module.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  display: flex;
+  flex-direction: row;  
+  align-items: center;
+  width: 900px;
+  margin-top: 12px;
+  gap: 12px;
+  color: $bg-color-dark-secondary;
+
+}
+
+.component-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  gap: 12px;
+
+  & .info {
+    height: 220px;
+    width: 100%;
+    background-color: $bg-color-light-primary;
+    padding: 1rem;
+    border-radius: $border-radius-large;
+    line-height: 22px;
+  }
+
+  & .color-picker {
+    min-height: 100px;
+    background-color: $bg-color-light-primary;
+    border-radius: $border-radius-large;
+    display: flex;
+
+    & img {
+      margin: .6rem auto;
+      max-width: 90px;
+    }
+
+  }
+}
+
+.component {
+  flex: 2;
+  display: flex;
+  height: 344px;
+  background-color: $bg-color-light-primary;
+  border-radius: $border-radius-large;
+  justify-content: center;
+  align-items: center;
+
+  & .btn-page {
+    margin: auto;
+  }
+}
+
+
+
+
+.code {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+
+  & .break {
+    color: $bg-color-dark-secondary;
+    padding: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  & .code-cols {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+
+
+    & .jsx-code, .scss-code {
+
+      & .code-box {
+        border-radius: 0 0 10px 10px;
+      }
+    
+      & .jsx-code-title, .scss-code-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: $bg-color-light-primary;
+        border-radius: 10px 10px 0 0;
+        padding: .6rem;
+        
+
+    
+        & h5 {
+          color: $bg-color-dark-secondary;
+          padding: 0 1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+@import '../../abstracts/variables.module.scss';
+
+.container {
+  display: grid;
+  margin: 0, auto;
+  max-width: 900px;
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: minmax(90px, auto);
+  gap: 12px;
+  background-color: red;
+  color: $bg-color-dark-secondary;
+}
+
+.comps {
+  background-color: $bg-color-light-primary;
+  border-radius: .6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.claim {
+  background-color: $bg-color-light-primary;
+  border-radius: .6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instructions {
+  background-color: $bg-color-light-primary;
+  border-radius: .6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sassLogo {
+  background-color: $bg-color-light-primary;
+  border-radius: .6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reactLogo {
+  background-color: $bg-color-light-primary;
+  border-radius: .6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reactLogo {
+  background-color: $bg-color-light-primary;
+  border-radius: .6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.colorPicker {
+  background-color: $bg-color-light-primary;
+  border-radius: .6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.jsxCode {
+  background-color: $bg-color-light-primary;
+  border-radius: .6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scssCode {
+  background-color: $bg-color-light-primary;
+  border-radius: .6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

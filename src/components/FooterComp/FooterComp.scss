@@ -1,0 +1,121 @@
+@import '../../abstracts/variables.module.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.footer-container {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  width: 900px;
+  height: 140px;
+  gap: 12px;
+  justify-content: center;
+  
+
+
+  & .footer {
+    flex: 2;
+    background-color: $bg-color-light-primary;
+    border-radius: $border-radius-large;
+    color: $bg-color-dark-primary;
+    height: 140px;
+    padding: 1.6rem;
+    justify-content: center;
+    align-self: center;
+    text-align: start;
+    line-height: 22px;
+
+    & h6 {
+      margin-top: .6rem;
+      font-size: 1rem;
+    }
+  }
+
+
+  & .footer-right {
+    flex: 2;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+  
+
+    & .links {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+      width: 418px;
+      font-size: 1rem;
+      justify-content: center;
+
+      & .github {
+        flex: 1;
+        background-color: $bg-color-light-primary;
+        border-radius: $border-radius-large;
+        color: $bg-color-dark-primary;
+        border: none;
+        font-size: 1rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: $smooth-transition;
+
+        &:hover {
+          box-shadow: 0px 0px 6px #ac11ff, 0px 0px 8px #b222ff;
+        }
+
+        & img {
+          margin-right: .6rem;
+        }
+      }
+
+      & .spotify {
+        flex: 1;
+        background-color: $bg-color-light-primary;
+        border-radius: $border-radius-large;
+        color: $bg-color-dark-primary;
+        border: none;
+        font-size: 1rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: $smooth-transition;
+
+        &:hover {
+          box-shadow: 0px 0px 6px #29ff74, 0px 0px 8px #31ff79;
+        }
+
+        & img {
+          margin-right: .6rem;
+        }
+      }
+    }
+
+    & .byme {
+      flex: 1;
+      display: flex;
+      width: 418px;
+      background-color: $bg-color-light-primary;
+      border-radius: $border-radius-large;
+      align-items: center;
+      justify-content: center;
+
+      & p {
+        color: $bg-color-dark-primary;
+
+      }
+    }
+  }
+}

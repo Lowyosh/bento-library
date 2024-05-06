@@ -1,0 +1,54 @@
+@import '../../abstracts/variables.module.scss';
+
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  background-color: rgb(164, 164, 164);
+  padding: .6rem;
+
+
+  & .accordion-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1rem;
+    font-family: 'Poppins';
+    transition: $smooth-transition;
+  }
+
+  & .accordionOpen {
+    display: grid;
+    overflow: hidden;
+    transition: $smooth-transition;
+    justify-items: start;
+
+    grid-template-rows: 1fr;
+    opacity: 1;
+    padding: .6rem;
+  }
+
+  & .accordionClose {
+    display: grid;
+    overflow: hidden;
+    transition: $smooth-transition;
+
+    grid-template-rows: 0fr;
+    opacity: 0;
+  }
+
+  & .accordion-text {
+    text-align: start;
+    overflow: hidden;
+  }
+
+  & .accordion-icon {
+    color: $bg-color-light-primary;
+    font-weight: $font-weight-bold;
+    flex-shrink: 0;
+    margin: auto .3rem;
+  }
+}
+
+
+

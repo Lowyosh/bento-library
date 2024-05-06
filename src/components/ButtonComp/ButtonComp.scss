@@ -1,0 +1,18 @@
+@import '../../abstracts/variables.module';
+
+.btn {
+  border-style: none;
+  font-size: $font-size-medium;
+  padding: .5rem 1.5rem;
+  margin: auto;
+  color:  $text-color-light-primary;
+  border-radius: $border-radius-small;
+  transition: $smooth-transition;
+  background-color: $bg-color-dark-primary;
+  box-shadow:  0px 3px 4px #0000004a;
+  font-weight: 600;
+
+  &:hover {
+    box-shadow: 0px 6px 5px #00000000;
+  }
+}

@@ -1,0 +1,42 @@
+@import '../../abstracts/variables.module.scss';
+
+nav {
+  height: 94px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: $border-radius-large;
+  text-decoration: none;
+  background: $bg-color-light-primary;
+  color: $bg-color-dark-secondary;
+
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0 auto;
+  color: $bg-color-dark-secondary;
+
+  align-items: center;
+}
+
+nav li {
+  margin: 1.5rem;
+}
+
+nav li a {
+  text-decoration: none;
+  color: $bg-color-dark-secondary;
+  font-weight: 400;
+  transition: .2s;
+}
+
+nav li a:hover {
+  letter-spacing: .5px;
+}
+
+nav p {
+  align-self: center;
+  line-height: 1rem;
+  margin-left: 1rem;
+}

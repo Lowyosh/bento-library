@@ -1,0 +1,16 @@
+@import './abstracts/variables.module';
+
+:root {
+  font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 16px;
+  font-weight: $font-weight-regular;
+
+  color-scheme: light dark;
+  color: $text-color-light-primary;
+  background: linear-gradient(135deg, rgba(156,249,226,1) 0%, rgba(226,124,242,1) 100%);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

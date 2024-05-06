@@ -1,0 +1,53 @@
+@import '../../abstracts/variables.module.scss';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  margin: auto;
+  object-fit: contain;
+
+  border-radius: $border-radius-large;
+  backdrop-filter: blur(10px);
+  color: $text-color-dark-primary;
+  border: 1px solid $bg-color-light-primary;
+  
+  background-color: $bg-color-dark-primary;
+
+  & img {
+    object-fit: cover;
+    border-radius: inherit;
+    box-shadow: 0px 4px 12px $black;
+    transition: $smooth-transition;
+
+    &:hover {
+      box-shadow: 0px 2px 2px $black;
+    }
+  }
+
+  & h3 {
+    color: $bg-color-light-primary;
+    margin: 1.5rem;
+    font-size: $font-size-medium;
+    text-align: start;
+  }
+
+  & p {
+    color: $bg-color-light-primary;
+    margin: 0 1.5rem;
+    text-align: start;
+
+  }
+
+  & .info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  & .btn-card {
+    margin: 1.5rem;
+  }
+  
+}
+

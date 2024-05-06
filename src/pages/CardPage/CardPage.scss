@@ -1,0 +1,58 @@
+@import '../../abstracts/variables.module.scss';
+
+.page {
+  display: flex;
+  flex-direction: row;  
+  align-items: center;
+  max-width: 950px;
+  margin: auto;
+  gap: 2rem;
+
+  & .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+    margin: 1.5rem;
+  
+    & p {
+      margin: 0 auto;
+    }
+  
+    & h6 {
+      margin: 1.5rem;
+    }
+  }
+}
+
+
+
+
+.code {
+  max-width: 950px;
+  margin: auto;
+
+  & .code-cols {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+
+    & .jsx-code, .scss-code {
+
+
+      & .jsx-code-title, .scss-code-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    
+        & h5 {
+          padding: 0 1rem;
+        }
+      }
+    }
+  }
+}
+
+

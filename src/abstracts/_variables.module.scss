@@ -1,0 +1,124 @@
+// Colores semánticos
+$color-info: #469fff;
+$color-grey: #6c757d;
+$color-success: #4eff77;
+$color-danger: #ff5365;
+$color-warning: #ffc929;
+
+// Colores temáticos 
+$lo-sat-green1: #B9F1E4;
+$lo-sat-green2: #92CBBD;
+$lo-sat-green3: #497E71;
+$lo-sat-green4: #314540;
+
+$hi-sat-green1: #9CF9E2;
+$hi-sat-green2: #67D2B9;
+$hi-sat-green3: #12A07D;
+$hi-sat-green4: #094D3C;
+
+$lo-sat-purple1: #E9CAEE;
+$lo-sat-purple2: #C59ECB; 
+$lo-sat-purple3: #9B70A1;
+$lo-sat-purple4: #523C56;
+
+$hi-sat-purple1: #E27CF2;
+$hi-sat-purple2: #BA5BCA;
+$hi-sat-purple3: #9621A9;
+$hi-sat-purple4: #491053;
+
+
+//Otros colores
+$lime: rgb(173, 255, 47);
+$purple: rgb(152, 35, 226);
+$mustard: rgb(255, 196, 0);
+$red: rgb(174, 31, 31);
+$orange: rgb(255, 142, 43);
+$blue-dark: rgb(0, 0, 255);
+$blue-light: rgb(26, 102, 196);
+$black: black;
+
+// Colores de fondo
+$bg-color-light-primary: #f9f9f9;
+$bg-color-light-secondary: #d4d4d4;
+$bg-color-dark-primary: #313131;
+$bg-color-dark-secondary: rgb(33, 33, 33);
+$bg-color-dark-secondary: #212121;
+$bg-color-gradient: linear-gradient(45deg, rgba(156,249,226,1) 0%, rgba(226,124,242,1) 100%);
+
+// Colores de texto
+$text-color-dark-primary: #1b1e21;
+$text-color-dark-secondary: #343a40;
+$text-color-light-primary: #fffdf9;
+$text-color-light-secondary: #d4d4d4;
+
+// Pesos de fuentes
+$font-weight-light: 200;
+$font-weight-regular: 400;
+$font-weight-bold: 600;
+
+// Tamaños de fuentes
+$font-size-small: 1rem;
+$font-size-medium: 1.2rem;
+$font-size-large: 2rem;
+$font-size-extra-large: 3rem;
+
+// Otras variables útiles
+$border-radius-small: 0.3rem;
+$border-radius-large: 0.6rem;
+$border-radius-xlarge: 2rem;
+$smooth-transition: all ease-in-out 0.3s;
+
+:export {
+  colorInfo: $color-info;
+  colorGrey: $color-grey;
+  colorSuccess: $color-success;
+  colorDanger: $color-danger;
+  colorWarning: $color-warning;
+  lime: $lime;
+  purple: $purple;
+  mustard: $mustard;
+  red: $red;
+  orange: $orange;
+  blueDark: $blue-dark;
+  blueLight: $blue-light;
+  bgColorLightPrimary: $bg-color-light-primary;
+  bgColorLightSecondary: $bg-color-light-secondary;
+  bgColorDarkPrimary: $bg-color-dark-primary;
+  bgColorDarkSecondary: $bg-color-dark-secondary;
+  bgColorGradient: $bg-color-gradient;
+  textColorDarkPrimary: $text-color-dark-primary;
+  textColorDarkSecondary: $text-color-dark-secondary;
+  textColorLightPrimary: $text-color-light-primary;
+  textColorLightSecondary: $text-color-light-secondary;
+  fontWeightLight: $font-weight-light;
+  fontWeightRegular: $font-weight-regular;
+  fontWeightBold: $font-weight-bold;
+  fontSizeSmall: $font-size-small;
+  fontSizeMedium: $font-size-medium;
+  fontSizeLarge: $font-size-large;
+  fontSizeExtraLarge: $font-size-extra-large;
+  borderRadiusSmall: $border-radius-small;
+  borderRadiusLarge: $border-radius-large;
+  borderRadiusXlarge: $border-radius-xlarge;
+  smoothTransition: $smooth-transition;
+
+  lowSatGreen1: $lo-sat-green1;
+  lowSatGreen2: $lo-sat-green2;
+  lowSatGreen3: $lo-sat-green3;
+  lowSatGreen4: $lo-sat-green4;
+
+  hiSatGreen1: $hi-sat-green1;
+  hiSatGreen2: $hi-sat-green2;
+  hiSatGreen3: $hi-sat-green3;
+  hiSatGreen4: $hi-sat-green4;
+
+  lowSatPurple1: $lo-sat-purple1;
+  lowSatPurple2: $lo-sat-purple2;
+  lowSatPurple3: $lo-sat-purple3;
+  lowSatPurple4: $lo-sat-purple4;
+
+  hiSatPurple1: $hi-sat-purple1;
+  hiSatPurple2: $hi-sat-purple2;
+  hiSatPurple3: $hi-sat-purple3;
+  hiSatPurple4: $hi-sat-purple4;
+}
