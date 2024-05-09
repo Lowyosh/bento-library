@@ -1,0 +1,80 @@
+@import '../../abstracts/variables.module';
+
+.modal-window {
+  width: 350px;
+  height: 300px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  background-color: $bg-color-light-primary;
+  margin: auto;
+
+  & .modal-title {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  & .modal-info {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  & .modal-buttons {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.btn-in-modal {
+  border-style: none;
+  font-size: $font-size-medium;
+  padding: .5rem 1.5rem;
+  margin: auto;
+  color:  $text-color-light-primary;
+  border-radius: $border-radius-small;
+  transition: $smooth-transition;
+  background-color: $hi-sat-green3;
+  box-shadow:  0px 3px 4px #0000004a;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover {
+      box-shadow: none;
+  }
+}
+
+
+.close-btn {
+  display: flex;
+  justify-content: flex-end;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+
+  & button {
+    border-style: none;
+    font-size: $font-size-medium;
+    padding: .3rem .6rem;
+    color:  $text-color-light-primary;
+    background-color: #0000004a;
+    border-radius: $border-radius-small;
+    transition: $smooth-transition;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #00000038;
+    }
+  }
+
+
+
+}
+

@@ -22,6 +22,7 @@
   align-items: center;
   background-color: $bg-color-light-primary;
   border-radius: $border-radius-large;
+  text-decoration: none;
 }
 
 .title {
@@ -29,7 +30,13 @@
   text-align: start;
   margin: 12px;
   padding: .6rem;
+  color: $lo-sat-purple2;
+  text-decoration: none;
+  transition: $smooth-transition;
 
+  &:hover {
+    color: $hi-sat-purple2;
+  }
 }
 
 .rightCol {

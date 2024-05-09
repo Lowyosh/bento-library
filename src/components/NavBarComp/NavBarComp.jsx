@@ -11,9 +11,8 @@ export const NavBarComp = () => {
           <li><Link to="/btn">Button</Link></li>
           <li><Link to="/badge">Badge</Link></li>
           <li><Link to="/Card">Card</Link></li>
-          <li><Link to="#">Modal</Link></li>
+          <li><Link to="/modal">Modal</Link></li>
           <li><Link to="/accordion">Accordion</Link></li>
-          <li><Link to="#">Dropdown</Link></li>
         </ul>
       </nav>
     </div>

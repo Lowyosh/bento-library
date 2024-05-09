@@ -1,87 +1,170 @@
 @import '../../abstracts/variables.module.scss';
 
 .container {
-  display: grid;
-  margin: 0, auto;
-  max-width: 900px;
-  grid-template-columns: repeat(9, 1fr);
-  grid-auto-rows: minmax(90px, auto);
-  gap: 12px;
-  background-color: red;
+  display: flex;
+  flex-direction: column;
+  width: 900px;
   color: $bg-color-dark-secondary;
+  margin-top: 12px;
+
+  & .section1 {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    
+
+    & .comp-container {
+      flex: 2;
+      background-color: $bg-color-light-primary;
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+      padding: 1rem;
+      border-radius: $border-radius-large;
+
+      & .group-1 {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+
+        & .btns-home {
+          display: flex;
+          flex-direction: row;
+          margin: auto;
+          gap: 12px;
+        }
+
+        & .accordion-home {
+          margin: 12px;
+          background-color: $lo-sat-green2;
+          border-radius: $border-radius-large;
+        }
+
+        & .badges-comp {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+        }
+        
+      }
+
+      & .group-2 {
+        display: flex;
+        margin: auto;
+      }
+
+      & .card-home {
+        width: 250px;
+      }
+    }
+
+    & .makeityours {
+      flex: 1;
+      background-color: $bg-color-light-primary;
+      font-size: 2rem;
+      text-align: end;
+      font-weight:800;
+      line-height: 2rem;
+      border-radius: $border-radius-large;
+
+      & p {
+        margin: 3rem;
+      }
+    }
+  }
+
+  & .section2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+    gap: 12px;
+
+    & .instructions {
+      flex: 2;
+      padding: 1rem;
+      text-align: start;
+      line-height: 22px;
+      background-color: $bg-color-light-primary;
+      border-radius: $border-radius-large; 
+    }
+
+    & .logos {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      
+
+      & img {
+        width: 80px;
+        transition: $smooth-transition;
+
+        &:hover {
+          rotate: 5deg;
+        }
+      }
+      
+      & .sassLogo, .reactLogo {
+        background-color: $bg-color-light-primary;
+        padding: 1rem;
+        border-radius: $border-radius-large;
+      }
+    }
+
+    & .colorPicker {
+      flex: 3;
+      background-color: $bg-color-light-primary;
+      border-radius: $border-radius-large;
+      display: flex;
+
+      & img {
+        margin: auto;
+      }
+    }
+
+  }
 }
 
-.comps {
-  background-color: $bg-color-light-primary;
-  border-radius: .6rem;
-
+.code {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  width: 900px;
 
-}
+  & .break {
+    color: $bg-color-dark-secondary;
+    padding: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
 
-.claim {
-  background-color: $bg-color-light-primary;
-  border-radius: .6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.instructions {
-  background-color: $bg-color-light-primary;
-  border-radius: .6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.sassLogo {
-  background-color: $bg-color-light-primary;
-  border-radius: .6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.reactLogo {
-  background-color: $bg-color-light-primary;
-  border-radius: .6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.reactLogo {
-  background-color: $bg-color-light-primary;
-  border-radius: .6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.colorPicker {
-  background-color: $bg-color-light-primary;
-  border-radius: .6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  & .code-cols {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
 
 
-.jsxCode {
-  background-color: $bg-color-light-primary;
-  border-radius: .6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    & .jsx-code, .scss-code {
 
-.scssCode {
-  background-color: $bg-color-light-primary;
-  border-radius: .6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+      & .code-box {
+        border-radius: 0 0 10px 10px;
+      }
+    
+      & .jsx-code-title, .scss-code-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: $bg-color-light-primary;
+        border-radius: 10px 10px 0 0;
+        padding: .6rem;
+        
+
+    
+        & h5 {
+          color: $bg-color-dark-secondary;
+          padding: 0 1rem;
+        }
+      }
+    }
+  }
 }

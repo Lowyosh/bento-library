@@ -14,7 +14,6 @@
   margin-top: 12px;
   gap: 12px;
   color: $bg-color-dark-secondary;
-
 }
 
 .component-info {
@@ -48,22 +47,19 @@
   }
 }
 
-.btn-container {
+.accordion-comp-container {
   flex: 2;
-  display: flex;
   height: 344px;
   background-color: $bg-color-light-primary;
   border-radius: $border-radius-large;
-  justify-content: center;
-  align-items: center;
+  display: flex;
 
-  & .btn-page {
+  & .accordion-group {
     margin: auto;
+    background-color: $lo-sat-green2;
+    border-radius: inherit;
   }
 }
-
-
-
 
 .code {
   display: flex;

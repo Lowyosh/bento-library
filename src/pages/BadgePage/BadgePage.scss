@@ -1,4 +1,4 @@
-
+@import '../../abstracts/variables.module.scss';
 
 .page {
   display: flex;
@@ -26,6 +26,10 @@
     padding: 1rem;
     border-radius: $border-radius-large;
     line-height: 22px;
+
+    & b {
+      font-weight: 600;
+    }
   }
 
   & .color-picker {
@@ -43,7 +47,7 @@
 }
 
 
-.component {
+.badge-container {
   flex: 2;
   display: flex;
   flex-direction: column;
@@ -53,7 +57,9 @@
   background-color: $bg-color-light-primary;
   border-radius: $border-radius-large;
   
+
   & .badge-comp {
+    align-items: center;
     margin: auto;
   }
 }

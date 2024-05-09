@@ -3,6 +3,8 @@ import React from 'react'
 import { BadgeComp } from '../../components/BadgeComp/BadgeComp';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { qtcreatorLight } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import './../BadgePage/BadgePage.scss'
+import FooterComp from '../../components/FooterComp/FooterComp';
 
 import vars from '../../abstracts/_variables.module.scss';
 
@@ -31,7 +33,6 @@ export const BadgePage = () => {
 
 
   const scssCodeString = `.BadgeComp {
-    max-width: 200px;
     margin: auto;
     margin-bottom: 1rem;
     font-weight: $font-weight-bold;
@@ -40,6 +41,7 @@ export const BadgePage = () => {
     border-radius: $border-radius-xlarge;
     border: solid 1px $lime;
     background-color: $bg-color-dark-primary;
+    color: $bg-color-light-primary;
     background: linear-gradient(0deg, $bg-color-dark-primary 0%, $lime 100%);
   
   
@@ -51,14 +53,14 @@ export const BadgePage = () => {
   return (
     <div>
       <div className='page'>
-      <div className='component'>
-          <BadgeComp className='badge-comp' startColor={vars.bgColorDarkPrimary} endColor={vars.blueDark}>Thats a Badge!</BadgeComp>
-          <BadgeComp className='badge-comp' startColor={vars.bgColorDarkPrimary} endColor={vars.lime}>Thats another Badge!</BadgeComp>
-          <BadgeComp className='badge-comp' startColor={vars.red} endColor={vars.mustard}>And another one!</BadgeComp>
+      <div className='badge-container'>
+          <BadgeComp className='badge-comp' startColor={vars.bgColorDarkPrimary} endColor={vars.hiSatGreen2}>Thats a Badge!</BadgeComp>
+          <BadgeComp className='badge-comp' startColor={vars.hiSatPurple3} endColor={vars.hiSatGreen2}>Thats another Badge!</BadgeComp>
+          <BadgeComp className='badge-comp' startColor={vars.hiSatPurple4} endColor={vars.hiSatPurple1}>And another one!</BadgeComp>
       </div>
       <div className='component-info'>
         <div className="info">
-          <p>This component has this props: (Children, backgroundColor and color)<br /><br />You can also try what color desing adapts better to your needs with the color picker below.</p>
+          <p>This component has three props: <b>Children, startColor and endColor</b><br /><br />You can also try what color desing adapts better to your needs with the color picker below.</p>
         </div>
         <div className='color-picker'>
           <img src="src/assets/colorpicker.svg" alt="color picker" />
@@ -101,6 +103,7 @@ export const BadgePage = () => {
           </div>
         </div>
       </div>
+      <FooterComp></FooterComp>
     </div>
   )
 }

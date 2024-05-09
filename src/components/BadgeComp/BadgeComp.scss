@@ -1,18 +1,16 @@
 @import '../../abstracts/variables.module';
 
 .BadgeComp {
-  max-width: 200px;
-  margin: auto;
-  margin-bottom: 1rem;
   font-weight: $font-weight-bold;
   transition: $smooth-transition;
-  padding: .5rem 1.5rem;
+  padding: .2rem 1.5rem;
+  font-size: .8rem;
   border-radius: $border-radius-xlarge;
   border: solid 1px $lime;
   background-color: $bg-color-dark-primary;
+  color: $bg-color-light-primary;
   background: linear-gradient(0deg, $bg-color-dark-primary 0%, $lime 100%);
-
-
+  
   &:hover {
     opacity: .8;
   }

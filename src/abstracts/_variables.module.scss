@@ -39,10 +39,9 @@ $black: black;
 
 // Colores de fondo
 $bg-color-light-primary: #f9f9f9;
-$bg-color-light-secondary: #d4d4d4;
+$bg-color-light-secondary: #f0eee8;
 $bg-color-dark-primary: #313131;
 $bg-color-dark-secondary: rgb(33, 33, 33);
-$bg-color-dark-secondary: #212121;
 $bg-color-gradient: linear-gradient(45deg, rgba(156,249,226,1) 0%, rgba(226,124,242,1) 100%);
 
 // Colores de texto
@@ -102,20 +101,20 @@ $smooth-transition: all ease-in-out 0.3s;
   borderRadiusXlarge: $border-radius-xlarge;
   smoothTransition: $smooth-transition;
 
-  lowSatGreen1: $lo-sat-green1;
-  lowSatGreen2: $lo-sat-green2;
-  lowSatGreen3: $lo-sat-green3;
-  lowSatGreen4: $lo-sat-green4;
+  loSatGreen1: $lo-sat-green1;
+  loSatGreen2: $lo-sat-green2;
+  loSatGreen3: $lo-sat-green3;
+  loSatGreen4: $lo-sat-green4;
 
   hiSatGreen1: $hi-sat-green1;
   hiSatGreen2: $hi-sat-green2;
   hiSatGreen3: $hi-sat-green3;
   hiSatGreen4: $hi-sat-green4;
 
-  lowSatPurple1: $lo-sat-purple1;
-  lowSatPurple2: $lo-sat-purple2;
-  lowSatPurple3: $lo-sat-purple3;
-  lowSatPurple4: $lo-sat-purple4;
+  loSatPurple1: $lo-sat-purple1;
+  loSatPurple2: $lo-sat-purple2;
+  loSatPurple3: $lo-sat-purple3;
+  loSatPurple4: $lo-sat-purple4;
 
   hiSatPurple1: $hi-sat-purple1;
   hiSatPurple2: $hi-sat-purple2;

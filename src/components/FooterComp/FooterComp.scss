@@ -76,6 +76,8 @@
 
         & img {
           margin-right: .6rem;
+          width: 24px;
+          aspect-ratio: 1 / 1;
         }
       }
 
@@ -99,6 +101,8 @@
 
         & img {
           margin-right: .6rem;
+          width: 24px;
+          aspect-ratio: 1 / 1;
         }
       }
     }
@@ -115,6 +119,12 @@
       & p {
         color: $bg-color-dark-primary;
 
+      }
+
+      & img {
+        width: 24px;
+        aspect-ratio: 1 / 1;
+        margin: 0 .6rem;
       }
     }
   }

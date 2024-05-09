@@ -3,18 +3,27 @@
 .accordion-container {
   display: flex;
   flex-direction: column;
-  width: 450px;
-  background-color: rgb(164, 164, 164);
-  padding: .6rem;
-
+  background-color: $lo-sat-green2;
+  max-width: 250px;
+  padding: .3rem;
+  border-radius: $border-radius-small;
 
   & .accordion-btn {
     display: flex;
     justify-content: space-between;
     width: 100%;
     font-size: 1rem;
+    padding: .3rem;
     font-family: 'Poppins';
     transition: $smooth-transition;
+    background-color: $lo-sat-green3;
+    cursor: pointer;
+	  border: none;
+    border-radius: $border-radius-small;
+    
+    &:hover {
+      background-color: $hi-sat-green3;
+    }
   }
 
   & .accordionOpen {

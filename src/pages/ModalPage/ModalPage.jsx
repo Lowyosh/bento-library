@@ -1,13 +1,18 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-import CardComp from '../../components/CardComp/CardComp'
-import './CardPage.scss'
+import { useState } from 'react';
+
+import './ModalPage.scss'
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { qtcreatorLight } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import FooterComp from '../../components/FooterComp/FooterComp';
+// eslint-disable-next-line no-unused-vars
+import ModalComp from '../../components/ModalComp/ModalComp';
+
+import vars from '../../abstracts/_variables.module.scss';
 
 
-export const CardPage = () => {
+export const ModalPage = () => {
 
   const htmlCodeString = `export default function CardComp() {
 
@@ -81,11 +86,19 @@ export const CardPage = () => {
     
   }`
 
+  const [showModal, setShowModal] = useState(false)
+
+  const handleClick = () => { setShowModal(!showModal) };
+  
   return (
     <div>
-    <div className='page'>
-      <div className='btn-container'>
-      <CardComp />
+    <div className='modal-page'>
+    <div className='modal'>{showModal ? <ModalComp closeModal={setShowModal} /> : console.log('NOTclicked')}</div>
+    <div className='modal-onoff'>{showModal ? <div className='modal-bg'></div> : null}</div>
+    
+      <div className='modal-container'>
+          {showModal ? null : <button onClick={handleClick} className='btn-modal' style={{backgroundColor: vars.hiSatPurple2}}>Show modal</button>}
+           
       </div>
       <div className='component-info'>
         <div className="info">

@@ -6,7 +6,7 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 import { qtcreatorLight } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 import vars from '../../abstracts/_variables.module.scss';
-import { FooterComp } from '../../components/FooterComp/FooterComp';
+import FooterComp from '../../components/FooterComp/FooterComp';
 
 export const ButtonPage = () => {
 
@@ -60,7 +60,7 @@ export const ButtonPage = () => {
   return (
     <div>
     <div className='page'>
-      <div className='component'>
+      <div className='btn-container'>
       <ButtonComp
         className='btn-page'
         backgroundColor={vars.hiSatGreen3}
@@ -70,7 +70,7 @@ export const ButtonPage = () => {
       </div>
       <div className='component-info'>
         <div className="info">
-          <p>This component has this props: (Children, backgroundColor and color)<br /><br />You can also try what color desing adapts better to your needs with the color picker below.</p>
+          <p>This component has three props: <b>Children, backgroundColor and color</b> <br /><br />You can also try what color desing adapts better to your needs with the color picker below.</p>
         </div>
         <div className='color-picker'>
           <img src="src/assets/colorpicker.svg" alt="color picker" />

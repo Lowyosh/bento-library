@@ -15,13 +15,15 @@
     text-align: start;
     margin: 1.5rem;
   
+    & h6 {
+      margin: 1.5rem;
+    }
+    
     & p {
       margin: 0 auto;
     }
   
-    & h6 {
-      margin: 1.5rem;
-    }
+
   }
 }
 

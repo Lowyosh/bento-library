@@ -16,15 +16,15 @@ ButtonComp.propTypes = {
 export default function CardComp() {
   return (
     <div className='card'>
-      <img src="https://www.nbrii.com/img/bigstock-Large-group-of-people-Seamles-81251573_hud7da111a79594b81a0dd0d39b9a8de14_6993880_840x345_fill_q75_h2_box_center.webp" alt="" />
+      <img src="https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683_960_720.png" alt="" />
       <div className='info'>
-        <h3>Your title here</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem officia quam et commodi! Nihil non nemo quia nam distinctio amet? Quod asperiores debitis nihil, temporibus deserunt optio mollitia officia esse!</p>
+        <h3>This is a Card!</h3>
+        <p>To display info or just images </p>
         <div className='btn-card'>
           <ButtonComp
-            backgroundColor={vars.bgColorDarkSecondary}
+            backgroundColor={vars.loSatPurple3}
             color={vars.textColorLightPrimary}
-          >Click here for more info!
+          >Click here
           </ButtonComp>
         </div>
       </div>

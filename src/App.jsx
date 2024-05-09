@@ -12,6 +12,7 @@ import { CardPage } from './pages/CardPage/CardPage'
 import { ButtonPage } from './pages/ButtonPage/ButtonPage'
 import { BadgePage } from './pages/BadgePage/BadgePage'
 import { AccordionPage } from './pages/AccordionPage/AccordionPage'
+import { ModalPage } from './pages/ModalPage/ModalPage'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <Route path='/card' element={<CardPage/>}/>
         <Route path='/btn' element={<ButtonPage/>}/>
         <Route path='/badge' element={<BadgePage/>}/>
+        <Route path='/modal' element={<ModalPage/>}/>
         <Route path='/accordion' element={<AccordionPage/>}/>
       </Routes>
 
