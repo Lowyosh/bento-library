@@ -66,9 +66,11 @@
       font-weight:800;
       line-height: 2rem;
       border-radius: $border-radius-large;
+      color: $text-color-dark-secondary;
 
       & p {
         margin: 3rem;
+        line-height: 42px;
       }
     }
   }

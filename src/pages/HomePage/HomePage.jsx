@@ -52,12 +52,12 @@ export const HomePage = () => {
                 <ButtonComp
               className='btn-home'
               backgroundColor={vars.hiSatPurple3}
-              color={vars.textColorDarkPrimary}
+              color={vars.textColorLightPrimary}
               >Buttons</ButtonComp>
               <ButtonComp
               className='btn-home'
               backgroundColor={vars.hiSatGreen4}
-              color={vars.textColorDarkPrimary}
+              color={vars.textColorLightPrimary}
               >Buttons</ButtonComp>
               </div>
               
@@ -68,7 +68,7 @@ export const HomePage = () => {
 
              <div className="badges-comp">
               <BadgeComp  className='badge-home' startColor={vars.hiSatPurple4} endColor={vars.hiSatPurple1}>Choose a color</BadgeComp>
-              <BadgeComp  className='badge-home' startColor={vars.hiSatPurple3} endColor={vars.mustard}>Style your badge</BadgeComp>
+              <BadgeComp  className='badge-home' startColor={vars.loSatGreen4} endColor={vars.hiSatPurple3}>Style your badge</BadgeComp>
               <BadgeComp  className='badge-home' startColor={vars.bgColorDarkPrimary} endColor={vars.hiSatGreen3}>Make it yours</BadgeComp>
              </div>
             </div>
@@ -79,7 +79,7 @@ export const HomePage = () => {
             </div>  
              
           </div>
-          <div className="makeityours"><p>make <br /> it <br /> yours</p></div>
+          <div className="makeityours"><p> copy it <br /> modify it, <br /> make it <br />yours </p></div>
         </div>
         <div className="section2">
           <div className="instructions">Copy the JSX code and SCSS file to adapt it to your needs and use the variables module to modify the global look. <br /><br />You can also download the variables module to use them in your projects. </div>
